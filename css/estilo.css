@@ -1,0 +1,65 @@
+body{
+    background-color:rgb(226, 223, 223)
+}
+header{
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(49, 167, 25);
+}
+main{
+margin: 100px;
+text-align: center;
+
+}
+
+footer{
+    background-color: rgb(15, 177, 50);
+}
+
+#info{
+    padding: 50px;
+    margin: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    color:aliceblue;
+    background-image: linear-gradient(to right, rgb(43, 153, 15) , red);
+}
+#sobre {
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+#programa{ 
+border-radius: 20px;
+background-color: antiquewhite;
+
+}
+#palestrantes {
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+h1{
+    color:white ;
+}
+li{
+    display: inline;
+}
+nav ol{
+padding: 10px;
+}
+nav ol li {
+
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+#info a{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    text-decoration: none;
+    color:aliceblue;
+
+}
