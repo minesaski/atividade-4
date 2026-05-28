@@ -1,65 +1,132 @@
-body{
-    background-color:rgb(226, 223, 223)
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
+
+body{
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+
+header{ 
     margin: 5px;
     text-align: center;
-    background-color: rgb(49, 167, 25);
-}
-main{
-margin: 100px;
-text-align: center;
-
-}
-
-footer{
-    background-color: rgb(15, 177, 50);
-}
-
-#info{
-    padding: 50px;
-    margin: 100px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 5px;
-    color:aliceblue;
-    background-image: linear-gradient(to right, rgb(43, 153, 15) , red);
-}
-#sobre {
+    background-color: rgb(61, 165, 41);
     border-radius: 20px;
-    background-color: antiquewhite;
+    padding: 20px;
 }
-#programa{ 
-border-radius: 20px;
-background-color: antiquewhite;
 
-}
-#palestrantes {
-    border-radius: 20px;
-    background-color: antiquewhite;
-}
 h1{
-    color:white ;
+    color:white;
 }
-li{
-    display: inline;
+nav ol{ 
+    gap: 20px;               
+    padding: 10px;
+    list-style: none;
+    justify-content: space-evenly;
+    display: flex;
 }
-nav ol{
-padding: 10px;
-}
-nav ol li {
 
-}
 nav ul li a{
     text-decoration: none;
-    color:rgb(255, 255, 255)
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+}
+
+/* Main */
+main{
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Alinha seções verticalmente */
+    gap: 30px;
+}
+
+
+#info{
+    padding: 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgb(43, 153, 15), red);
+}
+
+#sobre, #programa, #palestrantes
+{
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+
+#programa p{
+    margin: 10px 0;
+}
+
+#palestrantes .speaker
+{
+    display: flex;               
+    justify-content: space-around; 
+    flex-wrap: wrap;             
+    gap: 20px;
+}
+#palestrantes .speaker{
+    flex: 1 1 250px;            
+    background-color: #f9f9f9;
+    border-left: 3px solid green;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+#palestrantes .speaker img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 #info a{
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     background-color: red;
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
+}
+footer{
+    background-color: rgb(61, 165, 41);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
 
+#img{       
+border-radius: 6px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    grid: 20px;
+}
+.btn {
+    background-color : red;
+}
+.card{
+    width: 300px;
+    text-align: center;
+    border-left: 3px solid green;
+}
+.form
+{
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
 }
